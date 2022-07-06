@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marigold disease prediction</title>
+</head>
+<style>
+body{
+    text-align: center;
+    font-family: monospace;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-image:url("https://www.wallpapers13.com/wp-content/uploads/2015/12/Marigold-flowers-images-and-wallpapers-8.jpg");
+}
+
+input[type="submit"]{
+    background: none;
+    display: block;
+    border: 0;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #3498db;
+    border-radius: 24px;
+    border-color:black; 
+    padding: 10px 40px;
+    color: rgb(22, 21, 21);
+    outline: none;
+    transition: 0.24s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: None;
+    font-family:Arial,"Times New Roman";
+}
+
+input[type="file"]{
+    background-color: green;
+    color: white;
+    padding: 16px;
+    border-radius: 6px;
+    margin: 10px;
+    font-size: xx-large;
+}
+
+h1{
+    font-size: 35px;
+    font-family:Arial,"Times New Roman";
+}
+
+</style>
+
+
+<body>
+    <h1>MARIGLOD DISEASE PREDICTION MODEL</h1>
+
+    <form action="prediction" method="POST" enctype="multipart/form-data">
+        <input type="file" name="img"/><br/>
+        <br/>
+        <input type="submit" name="btn"/>
+        
+    </form>
+
+</body>
+</html>
